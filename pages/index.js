@@ -31,23 +31,13 @@ export default function IndexPage({ users }) {
 }
 
 const client = createClient({
-    projectId; "",
-    dataset: "",
-    apiVersion: "",
-    useCdn: false
-})
+   projectId: '3ho6qypw',
+   dataset: 'production',
+   apiVersion: '2022-05-18',
+   useCdn: false,
+});
 export async function getStaticProps() {
-   const users = [
-      /* 
-        _createdAt:
-        _id:
-        _rev:
-        type: "user"
-        _updatedAt:
-        name:
-
-        */
-   ];
+   const users = await client.fetch(`*[_type == "user"]`);
 
    return {
       props: {
