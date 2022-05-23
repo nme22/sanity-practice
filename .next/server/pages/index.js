@@ -1,45 +1,82 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/index";
-exports.ids = ["pages/index"];
+exports.id = 405;
+exports.ids = [405];
 exports.modules = {
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ 599:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ IndexPage),\n/* harmony export */   \"getStaticProps\": () => (/* binding */ getStaticProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_sanity__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next-sanity */ \"next-sanity\");\n/* harmony import */ var next_sanity__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_sanity__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction IndexPage({ users  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"header\", {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: \"Next.js + Sanity\"\n                }, void 0, false, {\n                    fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                    lineNumber: 7,\n                    columnNumber: 13\n                }, this)\n            }, void 0, false, {\n                fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                lineNumber: 6,\n                columnNumber: 10\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"main\", {\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                        children: \"Number of Users\"\n                    }, void 0, false, {\n                        fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                        lineNumber: 10,\n                        columnNumber: 13\n                    }, this),\n                    users.length > 0 && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                        children: users.map((user)=>{\n                            /*#__PURE__*/ return (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                children: user === null || user === void 0 ? void 0 : user.name\n                            }, user._id, false, {\n                                fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                                lineNumber: 14,\n                                columnNumber: 22\n                            }, this);\n                        })\n                    }, void 0, false, {\n                        fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                        lineNumber: 12,\n                        columnNumber: 16\n                    }, this),\n                    !users.length > 0 && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                        children: \"No users to show\"\n                    }, void 0, false, {\n                        fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                        lineNumber: 18,\n                        columnNumber: 35\n                    }, this),\n                    users.length > 0 && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                children: \"XD\"\n                            }, void 0, false, {\n                                fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                                lineNumber: 21,\n                                columnNumber: 19\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                children: \"If i'm doing this correctly then the data will show up here when i've configured everything correctly\"\n                            }, void 0, false, {\n                                fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                                lineNumber: 22,\n                                columnNumber: 19\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                        lineNumber: 20,\n                        columnNumber: 16\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/nme22/Desktop/sanity-practice/pages/index.js\",\n                lineNumber: 9,\n                columnNumber: 10\n            }, this)\n        ]\n    }, void 0, true);\n};\nconst client = (0,next_sanity__WEBPACK_IMPORTED_MODULE_1__.createClient)({\n    projectId: \"3ho6qypw\",\n    dataset: \"production\",\n    apiVersion: \"2022-05-18\",\n    useCdn: false\n});\nasync function getStaticProps() {\n    const users = await client.fetch(`*[_type == \"user\"]`);\n    return {\n        props: {\n            users\n        }\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTtBQUEyQztBQUU1QixTQUFTQyxTQUFTLENBQUMsRUFBRUMsS0FBSyxHQUFFLEVBQUU7SUFDMUMscUJBQ0c7OzBCQUNHLDhEQUFDQyxRQUFNOzBCQUNKLDRFQUFDQyxJQUFFOzhCQUFDLGtCQUFnQjs7Ozs7d0JBQUs7Ozs7O29CQUNuQjswQkFDVCw4REFBQ0MsTUFBSTs7a0NBQ0YsOERBQUNDLElBQUU7a0NBQUMsaUJBQWU7Ozs7OzRCQUFLO29CQUN2QkosS0FBSyxDQUFDSyxNQUFNLEdBQUcsQ0FBQyxrQkFDZCw4REFBQ0MsSUFBRTtrQ0FDQ04sS0FBSyxDQUFDTyxHQUFHLENBQUMsQ0FBQ0MsSUFBSTswQ0FDYixxRUFBQ0MsSUFBRTswQ0FBaUJELElBQUksYUFBSkEsSUFBSSxXQUFNLEdBQVZBLEtBQUFBLENBQVUsR0FBVkEsSUFBSSxDQUFFRSxJQUFJOytCQUFyQkYsSUFBSSxDQUFDRyxHQUFHOzs7O29DQUFtQjt5QkFDdEMsQ0FBQzs7Ozs7NEJBQ0E7b0JBRVAsQ0FBQ1gsS0FBSyxDQUFDSyxNQUFNLEdBQUcsQ0FBQyxrQkFBSSw4REFBQ08sR0FBQztrQ0FBQyxrQkFBZ0I7Ozs7OzRCQUFJO29CQUM1Q1osS0FBSyxDQUFDSyxNQUFNLEdBQUcsQ0FBQyxrQkFDZCw4REFBQ1EsS0FBRzs7MENBQ0QsOERBQUNBLEtBQUc7MENBQUMsSUFBRTs7Ozs7b0NBQU07MENBQ2IsOERBQUNELEdBQUM7MENBQUMsdUdBR0g7Ozs7O29DQUFJOzs7Ozs7NEJBQ0Q7Ozs7OztvQkFFTDs7b0JBQ1AsQ0FDSjtDQUNKO0FBRUQsTUFBTUUsTUFBTSxHQUFHaEIseURBQVksQ0FBQztJQUN6QmlCLFNBQVMsRUFBRSxVQUFVO0lBQ3JCQyxPQUFPLEVBQUUsWUFBWTtJQUNyQkMsVUFBVSxFQUFFLFlBQVk7SUFDeEJDLE1BQU0sRUFBRSxLQUFLO0NBQ2YsQ0FBQztBQUNLLGVBQWVDLGNBQWMsR0FBRztJQUNwQyxNQUFNbkIsS0FBSyxHQUFHLE1BQU1jLE1BQU0sQ0FBQ00sS0FBSyxDQUFDLENBQUMsa0JBQWtCLENBQUMsQ0FBQztJQUV0RCxPQUFPO1FBQ0pDLEtBQUssRUFBRTtZQUNKckIsS0FBSztTQUNQO0tBQ0gsQ0FBQztDQUNKIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZ3JheS13b29kY29jay8uL3BhZ2VzL2luZGV4LmpzP2JlZTciXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAnbmV4dC1zYW5pdHknO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBJbmRleFBhZ2UoeyB1c2VycyB9KSB7XG4gICByZXR1cm4gKFxuICAgICAgPD5cbiAgICAgICAgIDxoZWFkZXI+XG4gICAgICAgICAgICA8aDE+TmV4dC5qcyArIFNhbml0eTwvaDE+XG4gICAgICAgICA8L2hlYWRlcj5cbiAgICAgICAgIDxtYWluPlxuICAgICAgICAgICAgPGgyPk51bWJlciBvZiBVc2VyczwvaDI+XG4gICAgICAgICAgICB7dXNlcnMubGVuZ3RoID4gMCAmJiAoXG4gICAgICAgICAgICAgICA8dWw+XG4gICAgICAgICAgICAgICAgICB7dXNlcnMubWFwKCh1c2VyKSA9PiAoXG4gICAgICAgICAgICAgICAgICAgICA8bGkga2V5PXt1c2VyLl9pZH0+e3VzZXI/Lm5hbWV9PC9saT5cbiAgICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgICAgPC91bD5cbiAgICAgICAgICAgICl9XG4gICAgICAgICAgICB7IXVzZXJzLmxlbmd0aCA+IDAgJiYgPHA+Tm8gdXNlcnMgdG8gc2hvdzwvcD59XG4gICAgICAgICAgICB7dXNlcnMubGVuZ3RoID4gMCAmJiAoXG4gICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgPGRpdj5YRDwvZGl2PlxuICAgICAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgICAgICBJZiBpJ20gZG9pbmcgdGhpcyBjb3JyZWN0bHkgdGhlbiB0aGUgZGF0YSB3aWxsIHNob3cgdXAgaGVyZVxuICAgICAgICAgICAgICAgICAgICAgd2hlbiBpJ3ZlIGNvbmZpZ3VyZWQgZXZlcnl0aGluZyBjb3JyZWN0bHlcbiAgICAgICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgKX1cbiAgICAgICAgIDwvbWFpbj5cbiAgICAgIDwvPlxuICAgKTtcbn1cblxuY29uc3QgY2xpZW50ID0gY3JlYXRlQ2xpZW50KHtcbiAgIHByb2plY3RJZDogJzNobzZxeXB3JyxcbiAgIGRhdGFzZXQ6ICdwcm9kdWN0aW9uJyxcbiAgIGFwaVZlcnNpb246ICcyMDIyLTA1LTE4JyxcbiAgIHVzZUNkbjogZmFsc2UsXG59KTtcbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTdGF0aWNQcm9wcygpIHtcbiAgIGNvbnN0IHVzZXJzID0gYXdhaXQgY2xpZW50LmZldGNoKGAqW190eXBlID09IFwidXNlclwiXWApO1xuXG4gICByZXR1cm4ge1xuICAgICAgcHJvcHM6IHtcbiAgICAgICAgIHVzZXJzLFxuICAgICAgfSxcbiAgIH07XG59XG4iXSwibmFtZXMiOlsiY3JlYXRlQ2xpZW50IiwiSW5kZXhQYWdlIiwidXNlcnMiLCJoZWFkZXIiLCJoMSIsIm1haW4iLCJoMiIsImxlbmd0aCIsInVsIiwibWFwIiwidXNlciIsImxpIiwibmFtZSIsIl9pZCIsInAiLCJkaXYiLCJjbGllbnQiLCJwcm9qZWN0SWQiLCJkYXRhc2V0IiwiYXBpVmVyc2lvbiIsInVzZUNkbiIsImdldFN0YXRpY1Byb3BzIiwiZmV0Y2giLCJwcm9wcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-/***/ }),
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": () => (/* binding */ IndexPage),
+  "getStaticProps": () => (/* binding */ getStaticProps)
+});
 
-/***/ "next-sanity":
-/*!******************************!*\
-  !*** external "next-sanity" ***!
-  \******************************/
-/***/ ((module) => {
+;// CONCATENATED MODULE: external "react/jsx-runtime"
+const jsx_runtime_namespaceObject = require("react/jsx-runtime");
+;// CONCATENATED MODULE: external "next-sanity"
+const external_next_sanity_namespaceObject = require("next-sanity");
+;// CONCATENATED MODULE: ./pages/index.js
 
-module.exports = require("next-sanity");
 
-/***/ }),
+function IndexPage({ users  }) {
+    return /*#__PURE__*/ (0,jsx_runtime_namespaceObject.jsxs)(jsx_runtime_namespaceObject.Fragment, {
+        children: [
+            /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("header", {
+                children: /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("h1", {
+                    children: "Next.js + Sanity"
+                })
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_namespaceObject.jsxs)("main", {
+                children: [
+                    /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("h2", {
+                        children: "Number of Users"
+                    }),
+                    users.length > 0 && /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("ul", {
+                        children: users.map((user)=>{
+                            /*#__PURE__*/ return jsx_runtime_namespaceObject.jsx("li", {
+                                children: user === null || user === void 0 ? void 0 : user.name
+                            }, user._id);
+                        })
+                    }),
+                    !users.length > 0 && /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("p", {
+                        children: "No users to show"
+                    }),
+                    users.length > 0 && /*#__PURE__*/ (0,jsx_runtime_namespaceObject.jsxs)("div", {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("div", {
+                                children: "XD"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_namespaceObject.jsx("p", {
+                                children: "If i'm doing this correctly then the data will show up here when i've configured everything correctly"
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    });
+};
+const client = (0,external_next_sanity_namespaceObject.createClient)({
+    projectId: "3ho6qypw",
+    dataset: "production",
+    apiVersion: "2022-05-18",
+    useCdn: false
+});
+async function getStaticProps() {
+    const users = await client.fetch(`*[_type == "user"]`);
+    return {
+        props: {
+            users
+        }
+    };
+}
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
-/***/ ((module) => {
-
-module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -50,7 +87,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
+var __webpack_exports__ = (__webpack_exec__(599));
 module.exports = __webpack_exports__;
 
 })();

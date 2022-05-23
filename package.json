@@ -10,6 +10,7 @@
       "start": "sanity start",
       "build": "sanity build",
       "dev": "next dev",
+      "lint": "next lint",
       "next-build": "next build",
       "next-start": "next start"
    },
